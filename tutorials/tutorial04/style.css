@@ -61,3 +61,29 @@ aside {
          "g g";
    }
 }
+
+@media (max-width: 700px) {
+   .container {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1.5fr 2fr 5fr 5fr 5fr;
+      grid-template-areas:
+         "a b"
+         "f f"
+         "c d"
+         "e e"
+         "g g";
+   }
+}
+
+@media (max-width: 400px) {
+   .container {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1.5fr 2fr 5fr 5fr 5fr;
+      grid-template-areas:
+         "a b"
+         "f f"
+         "c d"
+         "e e"
+         "g g";
+   }
+}
