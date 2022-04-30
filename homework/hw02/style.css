@@ -1,0 +1,236 @@
+body {
+    font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+    color: #fff;
+}
+a, a:hover, a:visited, a:active { 
+    color: #fff;
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/**********/
+/* Layout */
+/**********/
+aside, footer, header, nav, section, article {
+    display: flex;
+    flex-direction: column;
+}
+body {
+    overflow: hidden;
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 250px auto;
+    grid-template-rows: auto 100px;
+    grid-template-areas:
+       "left main"
+       "bottom bottom";
+    height: 100vh;
+}
+aside {
+    background-color: #000;
+    grid-area: left;
+}
+header {
+    background: #111;
+    position: fixed;
+    width: calc(100vw - 250px);
+    left: 250px;
+}
+
+main {
+    background: #111;
+    grid-area: main;
+    min-height: calc(350px);
+    max-height: calc(100vh - 100px);
+    overflow-y: auto;
+    z-index: 3;
+}
+
+nav {
+    margin-top: 100px;
+}
+
+footer {
+    background: #222;
+    grid-area: bottom;
+}
+
+
+/***************************/
+/* Accessories & Florishes */
+/***************************/
+::-webkit-scrollbar {
+    width: 16px;
+}
+
+::-webkit-scrollbar-thumb {
+    border: 4px solid transparent;
+    border-radius: 16px;
+    background-clip: padding-box;
+    min-height: 30px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: hsla(0,0%,100%,.3);
+}
+
+/***************************/
+/* Part A: Left Navigation */
+/***************************/
+
+/* Your Code Here */
+#sidebar {
+    padding-left: 20px;
+    padding-top: 10px;
+}
+/* logo = h1 */
+#sidebar h1 {
+    height: 20px;
+    margin-bottom: 50px;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+#sidebar h1 i {
+    font-size: 50px;
+}
+
+#sidebar a {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    font-size: 15px;
+    padding-left: 15px;
+    margin-top: 7.5px;
+    margin-bottom: 5px;
+    color: #DDDDDD;
+}
+
+/* hover effect on sidebar, extra credit 1*/
+#sidebar a:hover {
+    color: white;
+}
+
+#sidebar a i {
+    width: 30px;
+}
+
+
+
+/********************************/
+/* Part B: Header & Nav Styling */
+/********************************/
+
+/* Your Code Here */
+main header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+main header a {
+    font-size: 20px;
+    text-transform: uppercase;
+    height: 50px; 
+    border-radius: 20px;
+    display: flex;
+    width: 150px;
+    margin-right: 10px;
+    margin-top: 50px;
+    border-style: solid;
+    text-align: center;
+    align-items: center;
+    justify-content: center
+}
+
+main nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    padding-bottom: 7px;
+}
+
+main nav a {
+    text-transform: uppercase;
+    font-size: 20;
+    font-weight: bold;
+    color: #DDDDDD;
+    margin-left: 35px;
+}
+
+/*************************/
+/* Part C: Artists Panel */
+/*************************/
+
+/* Your Code Here */
+#featured-content {
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.artist-card {
+    width: 175px;
+    background-color: #222222;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 20px;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+}
+
+.artist-card img {
+    height: 150px;
+    width: auto;
+    align-items: center;
+    border-radius: 50%;
+    
+}
+
+.artist-card .play-button {
+    display: none;
+}
+
+.artist-card:hover .play-button{
+    display: flex;
+    background: #00FF00;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    float: right
+}
+
+/**************************/
+/* Part D: Responsive UIs */
+/**************************/
+
+/* Your Code Here */
+
+@media (max-width: 665px) {
+    #main header a {
+        display: none;
+    }
+}
+
+
+@media (max-width: 480px) {
+    #sidebar {
+        display: none;
+    }
+    #upgrade {
+        display: none;
+    }
+    #main header a {
+        display: none;
+    }
+    body {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+    
+}
+
