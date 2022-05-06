@@ -90,27 +90,23 @@ const tracks = [
 // This code adds a card for the 1st track in the list (above)
 // How would you use a loop so that a card is generated for every 
 // track in the list?
-const track = tracks[4];
-const template = `
-    <div data-index="0" onclick="playSong(event);">
+
+//const template = `
+//    <div data-index="0" onclick="playSong(event);">
+//       <img src="${track.image_url}" />
+//       <h2>${track.name}</h2>
+//    </div>`;
+//document.querySelector('main').innerHTML += template;
+
+//gonna try the actual way
+for (let i = 0; i < tracks.length; i++) {
+  const track = tracks[i];
+  const template = `
+    <div data-index="${i}" onclick="playSong(event);">
         <img src="${track.image_url}" />
         <h2>${track.name}</h2>
     </div>`;
-document.querySelector('main').innerHTML += template;
-
-let i = 0
-
-for (const track of track) {
-  const template = 
-  `
-  <div data-index="${i}" onclick="playSong(event);">
-        <img src="${track.image_url}" />
-        <h2>${track.name}</h2>
-    </div>
-    `;
-
     document.querySelector("main").innerHTML += template;
-  i +=1;
 }
 // Part 2: 
 // Using the event object, detect the element that triggered the
