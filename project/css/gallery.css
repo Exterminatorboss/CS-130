@@ -26,21 +26,16 @@ nav {
 /**************/
 /* NAVIGATION */
 /**************/
-nav {
-    grid-area: menu;
-    background: #222;
-    position: fixed;
-    width: 100%;
-    height: 60px;
-    line-height: 60px;
-    color: white;
-    z-index: 101;
-    padding: 10px;
+.navbar {
+    display: flex;
+    background: #F0F0F0;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    padding: 20px;
 }
-nav h1 {
-    color: white;
-    margin: 0px;
-    line-height: 40px;
+.navbar a, .navbar strong {
+    margin-right: 15px;
 }
 
 
