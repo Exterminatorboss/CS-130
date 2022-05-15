@@ -1,0 +1,117 @@
+body {
+    height:100%;
+    margin:0;
+    padding:0;
+    font-family: Arial;
+}
+body * {
+    box-sizing: border-box;
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px calc(100vh - 60px);
+    grid-template-areas:
+       "menu"
+       "gallery";
+    height: 100vh;
+}
+nav {
+    grid-area: menu;
+}
+.content {
+    grid-area: gallery;
+}
+
+/**************/
+/* NAVIGATION */
+/**************/
+nav {
+    grid-area: menu;
+    background: #222;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    color: white;
+    z-index: 101;
+    padding: 10px;
+}
+nav h1 {
+    color: white;
+    margin: 0px;
+    line-height: 40px;
+}
+
+
+.cards {
+    padding-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 25%;
+    padding: 10px;
+    /*
+    border: solid 1px #000;
+    */
+}
+
+.card > div {
+    border: solid 1px #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.card:hover > div {
+    border: solid 1px black;
+}
+
+.card:hover > .image-div {
+    opacity: 0.8;
+}
+
+.card:hover > .caption {
+    color: black;
+    font-weight: 700;
+}
+
+.image-div {
+    background-size: cover;
+    width: 100%;
+    height: 250px;
+    
+}
+
+.caption {
+    margin-top: 15px;
+    margin-bottom: 30px;
+    color: #999;
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1200px) {
+    .card {
+        width: 33.3%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .card {
+        width: 50%;
+    }
+    .card .image-div {
+        height: 350px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .card {
+        width: 100%;
+    }
+    .card .image-div {
+        height: 450px;
+    }
+}
