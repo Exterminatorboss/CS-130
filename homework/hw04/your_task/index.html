@@ -1,4 +1,4 @@
-<html>
+<html lang="en"></html>
     <head>
         <title>Spotify Player</title>
         <link rel="stylesheet" href="style.css">
@@ -25,18 +25,19 @@
                 <input type="search" 
                     placeholder="Search for Artists or Songs" 
                     id="search" 
-                    value="" />
+                    value="" 
+                    aria-label="Search for Artists or Songs"/>
             </header>
             <article id="featured-content">
-                <section id="artist-section">
+                <section id="artist-section" aria-label="artist-section">
                     <h1>Top Result</h1>
                     <section id="artist">Artist card goes here.</section>
                 </section>
-                <section id="track-section">
+                <section id="track-section" aria-label="track-section">
                     <h1>Songs</h1>
                     <section id="tracks">First 5 tracks go here.</section>
                 </section>
-                <section id="album-section">
+                <section id="album-section" aria-label="album-section">
                     <h1>Albums</h1>
                     <section id="albums"></section>
                 </section>
@@ -61,7 +62,7 @@
                     <input aria-label="visually displays how the audio time is advancing" type="range" id="player-time">
                     <span id="time-total">3:00</span>
                 </div>
-                <audio id="track" src="" />
+                <audio id="track" src="" >
             </div>
         </footer>
     </body>
