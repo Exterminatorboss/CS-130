@@ -2,7 +2,7 @@ body {
     height:100%;
     margin:0;
     padding:0;
-    font-family: Arial;
+    font-family: 'Bitter', serif;;
 }
 body * {
     box-sizing: border-box;
@@ -28,7 +28,7 @@ nav {
 /**************/
 .navbar {
     display: flex;
-    background: #F0F0F0;
+    background: aliceblue;
     align-items: center;
     justify-content: center;
     color: black;
@@ -38,9 +38,12 @@ nav {
     margin-right: 15px;
 }
 
-
+.text {
+    padding-top: 40px;
+    padding-left: 20px;
+}
 .cards {
-    padding-top: 100px;
+    padding-top: 80px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -54,13 +57,13 @@ nav {
 }
 
 .card > div {
-    border: solid 1px #ccc;
+    border: solid 2px slategrey;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 15px;
 }
 
 .card:hover > div {
-    border: solid 1px black;
+    border: solid 4px black;
 }
 
 .card:hover > .image-div {
@@ -82,7 +85,7 @@ nav {
 .caption {
     margin-top: 15px;
     margin-bottom: 30px;
-    color: #999;
+    color: lightslategrey;
     display: flex;
     justify-content: center;
 }
