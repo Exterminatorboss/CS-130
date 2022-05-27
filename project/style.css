@@ -52,8 +52,21 @@ main {
 
 .column img {
     /* height:50%; */
-    width: 80%;
+    width: 90%;
+    height: 500px;
     background-color: #F0FFFF;
     border-radius: 1px;
+    
+    /* width: 600px; */
+    /* height: 700px; */
+    
 }
+
+
+#mapapi {
+    height: 400px;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
+  }
 
