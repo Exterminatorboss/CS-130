@@ -43,7 +43,7 @@ nav {
     padding-left: 20px;
 }
 .cards {
-    margin-top: 133px;
+    padding-top: 110px;
     display: flex;
     flex-wrap: wrap;
 }
