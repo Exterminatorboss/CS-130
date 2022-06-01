@@ -18,13 +18,18 @@ body {
 }
 
 main {
-  padding-left: 5%;
+  /* padding-left: 5%; */
   width: 95%;
 }
 
 .AboutUs {
   width: 100%;
   padding-top: 1%;
+  padding-left: 5%;
+}
+
+.Title {
+  padding-left: 5%;
 }
 
 .bio {
@@ -47,15 +52,20 @@ main {
   min-width: 400px;
 }
 .map {
-  padding-bottom: 30px;
+  /* padding-bottom: 30px; */
   margin-top: 50px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
+  padding-left: 5%;
 }
 .footer {
   /* float:left; */
   /* width:50%; */
-  padding: 5px;
+  /* padding: 5px; */
   background-color: steelblue;
+  padding-left: 5%;
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .column img {
@@ -69,9 +79,87 @@ main {
   /* height: 700px; */
 }
 
-#mapapi {
-  height: 400px;
-  /* The height is 400 pixels */
-  width: 100%;
-  /* The width is the width of the web page */
+#mapholder {
+  width: 1000px;
+  height: auto;
+  background: url(img/world_map.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+#mapholder ul {
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  width: 400px;
+  height: 512px;
+  list-style: none;
+}
+
+#mapholder ul li {
+  display: inline;
+  width: 0;
+  height: 0;
+}
+#mapholder ul li a {
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 24px;
+  background: url(img/map_pin.png);
+  cursor: pointer;
+}
+#mapholder ul li.p1 a {
+  left: 450px;
+  top: 90px;
+}
+#mapholder ul li.p2 a {
+  left: 590px;
+  top: 300px;
+}
+#mapholder ul li.p3 a {
+  left: 660px;
+  top: 360px;
+}
+#mapholder ul li.p4 a {
+  left: 220px;
+  top: 250px;
+}
+#mapholder ul li.p5 a {
+  left: 570px;
+  top: 190px;
+}
+
+@media screen and (max-width: 700px) {
+  #mapholder {
+    width: 700px;
+    height: auto;
+    background: url(img/world_map.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+  }
+
+  #mapholder ul li.p1 a {
+    left: 450px;
+    top: 90px;
+  }
+  #mapholder ul li.p2 a {
+    left: 590px;
+    top: 300px;
+  }
+  #mapholder ul li.p3 a {
+    left: 660px;
+    top: 360px;
+  }
+  #mapholder ul li.p4 a {
+    left: 220px;
+    top: 250px;
+  }
+  #mapholder ul li.p5 a {
+    left: 570px;
+    top: 190px;
+  }
 }

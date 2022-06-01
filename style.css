@@ -100,6 +100,7 @@ main {
 #mapholder ul li {
   display: inline;
   width: 0;
+  
   height: 0;
 }
 #mapholder ul li a {
