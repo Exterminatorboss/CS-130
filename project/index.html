@@ -7,7 +7,12 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Bitter&family=Merriweather:wght@300&display=swap" rel="stylesheet">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">       
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" />
+        <!-- Required JavaScripts -->
+        <script defer src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"></script>
+        <script defer src="js/leaflet-providers.js"></script>
+        <script defer src="js/index.js"></script>
     </head>
     <body>
         <!-- HTML content tags go here -->
@@ -48,7 +53,11 @@
             <section class = "map">           
                 <h1>Touring the World!</h1>
                 <p>These are some of the places we've been to.</p>
-                <div id="mapholder">
+                <div id="mapid">
+
+                </div>
+
+                <!-- <div id="mapholder">
                     <ul>
                         <li class="p1">
                         <a href="iceland.html" title="Iceland"></a>
@@ -66,7 +75,7 @@
                         <a href="greece.html" title="Greece"></a>
                       </li>
                     </ul>
-                  </div>
+                  </div> -->
             </section>
             <section class = "footer">
                 <h1>Contact Us</h1>

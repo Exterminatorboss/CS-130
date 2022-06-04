@@ -79,12 +79,18 @@ main {
   /* height: 700px; */
 }
 
-#mapholder {
-  width: 1000px;
+#mapid { 
+  width: 100%;
+  height: 500px; 
+  border: solid 1px #000;
+}
+
+/* #mapholder {
+  width: 100%;
   height: auto;
   background: url(img/world_map.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   position: relative;
   overflow: hidden;
 }
@@ -123,8 +129,8 @@ main {
   top: 360px;
 }
 #mapholder ul li.p4 a {
-  left: 220px;
   top: 250px;
+  left: 18vw;
 }
 #mapholder ul li.p5 a {
   left: 570px;
@@ -133,7 +139,6 @@ main {
 
 @media screen and (max-width: 700px) {
   #mapholder {
-    width: 700px;
     height: auto;
     background: url(img/world_map.png);
     background-repeat: no-repeat;
@@ -162,4 +167,4 @@ main {
     left: 570px;
     top: 190px;
   }
-}
+} */
